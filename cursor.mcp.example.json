@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "saturn": {
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": {
+        "SATURN_TOKEN": "${env:SATURN_TOKEN}",
+        "SATURN_BASE_URL": "https://api.saturncloud.io"
+      },
+      "transport": {
+        "stdio": true
+      }
+    }
+  }
+}
